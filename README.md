@@ -30,7 +30,7 @@ samples, guidance on mobile development, and a full API reference.
 # top most bids for particular product published by farmer 
 ![WhatsApp Image 2023-08-12 at 2 55 33 PM](https://github.com/siddhanthole74/Krishak-Farma/assets/100555105/5dc70006-9163-448e-a956-e706061ccb25)
 
-https://github.com/siddhanthole74/Krishak-Farma/assets/100555105/45f0abd6-d0bc-4998-9359-5262d60289cc
+
 
 
 ![Profile Screen](https://user-images.githubusercontent.com/100555105/215270210-b25c9675-ee38-4395-9921-669f339d14cc.jpeg)
