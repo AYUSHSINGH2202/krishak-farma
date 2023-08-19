@@ -19,8 +19,10 @@ import 'models/add_date.dart';
 Future<void> main() async
 {
 
-
+  // Initialize Firebase or other services if needed
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
   await Firebase.initializeApp();
 
   // await Firebase.initializeApp(
@@ -30,8 +32,13 @@ Future<void> main() async
 
 
 
+  // Initialize Hive
   await Hive.initFlutter();//// for add product
+
+  // Register the custom adapter for your data model
   Hive.registerAdapter(AdddataAdapter());
+
+
   await Hive.openBox<Add_data>('data');
 
 
@@ -41,7 +48,7 @@ Future<void> main() async
 
 
 
-
+  // Run the app
   runApp(MyApp());
 
 
@@ -75,21 +82,21 @@ class MyApp extends StatelessWidget
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: SplashScreen.routeName,
-        // home: FutureBuilder(future: checkLoginStatus(),builder:(BuildContext context,AsyncSnapshot<bool>snapshot){
-        //   if(snapshot.data==false){
-        //     return SignInScreen();
-        //   }
-        //   if(snapshot.connectionState==ConnectionState.waiting){
-        //     return Container(
-        //       color: Colors.white,
-        //       child: Center(
-        //         child: CircularProgressIndicator(),
-        //       ),
-        //     );
-        //   }
-        //   return HomeScreen();
-        //
-        // } ),
+        home: FutureBuilder(future: checkLoginStatus(),builder:(BuildContext context,AsyncSnapshot<bool>snapshot){
+          if(snapshot.data==false){
+            return SignInScreen();
+          }
+          if(snapshot.connectionState==ConnectionState.waiting){
+            return Container(
+              color: Colors.white,
+              child: Center(
+                child: CircularProgressIndicator(),
+              ),
+            );
+          }
+          return HomeScreen();
+
+        } ),
         routes: routes,
       ),
     );

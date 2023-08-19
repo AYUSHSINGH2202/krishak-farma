@@ -9,6 +9,9 @@ class SizeConfig {
   static Orientation? orientation;
 
   void init(BuildContext context) {
+    // This method is called to obtain the MediaQueryData object associated with the
+    // provided BuildContext. The returned MediaQueryData object contains various properties about the device's screen
+    // such as the screen width, height, orientation, padding, and more
     _mediaQueryData = MediaQuery.of(context);
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
