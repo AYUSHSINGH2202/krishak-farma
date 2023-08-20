@@ -1,4 +1,5 @@
 import 'package:hive/hive.dart';
+
 part 'add_date.g.dart';
 
 @HiveType(typeId: 1)

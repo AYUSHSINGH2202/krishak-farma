@@ -23,7 +23,7 @@ import 'package:krishak_farma/screens/sign_up/components/verifyemailform.dart';
 import 'package:krishak_farma/screens/sign_up/sign_up_screen.dart';
 import 'package:krishak_farma/screens/splash/splash_screen.dart';
 import 'package:krishak_farma/screens/sign_up/components/verifyemailform.dart';
-import 'otp/otp_screen.dart';
+// import 'otp/otp_screen.dart';
 
 final Map<String, WidgetBuilder> routes = {
   //Splash.routeName:(context)=>Splash(),

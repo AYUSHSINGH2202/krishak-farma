@@ -10,7 +10,7 @@ import 'package:krishak_farma/screens/sign_in/sign_in_screen.dart';
 import 'package:krishak_farma/screens/splash/splash_screen.dart';
 import 'package:overlay_support/overlay_support.dart';
 
-import 'firebase_options.dart';
+// import 'firebase_options.dart';
 import 'models/add_date.dart';
 
 
@@ -62,15 +62,15 @@ class MyApp extends StatelessWidget
   MyApp({Key? key}) : super(key: key);
   //await Firebase.initializeApp();
 
-  // final storage=new FlutterSecureStorage();
-  // Future<bool> checkLoginStatus() async{
-  //   String?value =await storage.read(key: "uid");
-  //   if(value==null){
-  //     return false;
-  //   }
-  //   return true;// dash boars
-  //
-  // }
+  final storage=new FlutterSecureStorage();
+  Future<bool> checkLoginStatus() async{
+    String?value =await storage.read(key: "uid");
+    if(value==null){
+      return false;
+    }
+    return true;// dash boars
+
+  }
 
   @override
   Widget build(BuildContext context) {

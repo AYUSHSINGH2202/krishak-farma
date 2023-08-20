@@ -32,7 +32,8 @@ class _HomeState extends State<Home> {
   List<Map<String, dynamic>> messages = [];
 
   @override
-  void initState() {
+  void initState()
+  {
     DialogFlowtter.fromFile().then((instance) => dialogFlowtter = instance);
     super.initState();
   }

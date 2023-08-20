@@ -19,7 +19,7 @@ class AdddataAdapter extends TypeAdapter<Add_data> {
     return Add_data(
       fields[3] as String,
       fields[2] as String,
-      fields[4] as DateTime,k
+      fields[4] as DateTime,
       fields[1] as String,
       fields[0] as String,
     );
